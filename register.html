@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivara Global - Register/Login</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand" onclick="goHome()">NivaraGlobal</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="request-quote.html">Request Quote</a>
+    <a href="order-tracking.html">Order Tracking</a>
+    <a href="ratings.html">Ratings</a>
+    <a href="register.html" class="active">Login/Register</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Register / Login</h1>
+
+  <div class="grid-2 mt-3">
+    <div class="panel">
+      <h2>Buyer Registration</h2>
+      <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name">
+        <label>Email</label>
+        <input type="email" placeholder="you@example.com">
+        <label>Password</label>
+        <input type="password" placeholder="********">
+        <button class="btn primary" type="button" onclick="alertAction('Buyer Registered')">Register</button>
+      </form>
+    </div>
+
+    <div class="panel">
+      <h2>Seller Registration</h2>
+      <form>
+        <label>Company Name</label>
+        <input type="text" placeholder="Company Name">
+        <label>Email</label>
+        <input type="email" placeholder="email@company.com">
+        <label>Password</label>
+        <input type="password" placeholder="********">
+        <label>KYC ID</label>
+        <input type="text" placeholder="1234567890">
+        <button class="btn primary" type="button" onclick="alertAction('Seller Registered')">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="panel mt-6">
+    <h2>Login</h2>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com">
+      <label>Password</label>
+      <input type="password" placeholder="********">
+      <button class="btn primary" type="button" onclick="alertAction('Login Success')">Login</button>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year3"></span> Nivara Global</p>
+</footer>
+
+</body>
+</html>

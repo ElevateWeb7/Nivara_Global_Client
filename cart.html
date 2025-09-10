@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivara Global - Cart</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand" onclick="goHome()">NivaraGlobal</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html" class="active">Cart</a>
+    <a href="request-quote.html">Request Quote</a>
+    <a href="order-tracking.html">Order Tracking</a>
+    <a href="ratings.html">Ratings</a>
+    <a href="register.html">Login/Register</a>
+  </nav>
+  <button class="mobile-menu" id="mobileBtn2">&#9776;</button>
+</header>
+
+<main class="container">
+  <h1>Your Cart</h1>
+  
+  <div class="list mt-3">
+    <!-- Cart Item 1 -->
+    <div class="list-row grid-2">
+      <img src="https://via.placeholder.com/88x68?text=Product+1" alt="Product 1">
+      <div>
+        <h3>Premium Cotton Tissue Pack</h3>
+        <div class="meta">Seller: Nivara Supplies</div>
+        <div class="p-actions mt-3">
+          <button class="btn small" onclick="alertAction('Quantity decreased')">-</button>
+          <span class="small">2</span>
+          <button class="btn small" onclick="alertAction('Quantity increased')">+</button>
+        </div>
+        <div class="price mt-2">₹450 x 2 = ₹900</div>
+      </div>
+    </div>
+
+    <!-- Cart Item 2 -->
+    <div class="list-row grid-2">
+      <img src="https://via.placeholder.com/88x68?text=Product+2" alt="Product 2">
+      <div>
+        <h3>Luxury Toilet Paper Roll</h3>
+        <div class="meta">Seller: Soft Touch Traders</div>
+        <div class="p-actions mt-3">
+          <button class="btn small" onclick="alertAction('Quantity decreased')">-</button>
+          <span class="small">1</span>
+          <button class="btn small" onclick="alertAction('Quantity increased')">+</button>
+        </div>
+        <div class="price mt-2">₹1200</div>
+      </div>
+    </div>
+
+    <!-- Cart Item 3 -->
+    <div class="list-row grid-2">
+      <img src="https://via.placeholder.com/88x68?text=Product+3" alt="Product 3">
+      <div>
+        <h3>Soft 2-Ply Tissue Roll</h3>
+        <div class="meta">Seller: CleanCare Pvt Ltd</div>
+        <div class="p-actions mt-3">
+          <button class="btn small" onclick="alertAction('Quantity decreased')">-</button>
+          <span class="small">3</span>
+          <button class="btn small" onclick="alertAction('Quantity increased')">+</button>
+        </div>
+        <div class="price mt-2">₹750 x 3 = ₹2250</div>
+      </div>
+    </div>
+
+    <!-- Add more items to simulate 8-10 items for realistic demo -->
+  </div>
+
+  <div class="panel mt-6">
+    <h3>Order Summary</h3>
+    <div class="metric">Subtotal: ₹4350</div>
+    <div class="metric">Shipping: ₹150</div>
+    <div class="metric"><strong>Total: ₹4500</strong></div>
+    <button class="btn primary mt-3" onclick="alertAction('Proceed to Checkout')">Proceed to Checkout</button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year2"></span> Nivara Global</p>
+</footer>
+
+</body>
+</html>

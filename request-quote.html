@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivara Global - Request Quote</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand" onclick="goHome()">NivaraGlobal</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="request-quote.html" class="active">Request Quote</a>
+    <a href="order-tracking.html">Order Tracking</a>
+    <a href="ratings.html">Ratings</a>
+    <a href="register.html">Login/Register</a>
+  </nav>
+  <button class="mobile-menu" id="mobileBtn3">&#9776;</button>
+</header>
+
+<main class="container">
+  <h1>Buyer Quote Requests</h1>
+
+  <div class="list mt-3">
+    <!-- Example 10+ quote requests -->
+    <div class="list-row">
+      <h3>Request: 500 Tissue Rolls</h3>
+      <div class="meta">Buyer: ABC Traders | Date: 10-09-2025</div>
+      <p>Requirement: Soft 2-Ply Tissue Rolls, individually wrapped. Delivery within 2 weeks.</p>
+      <button class="btn small primary" onclick="alertAction('Quote Sent')">Send Quote</button>
+    </div>
+
+    <div class="list-row">
+      <h3>Request: 1000 Toilet Paper Packs</h3>
+      <div class="meta">Buyer: XYZ Enterprises | Date: 09-09-2025</div>
+      <p>Requirement: Premium Cotton Toilet Paper, multi-pack. Delivery to Mumbai warehouse.</p>
+      <button class="btn small primary" onclick="alertAction('Quote Sent')">Send Quote</button>
+    </div>
+
+    <div class="list-row">
+      <h3>Request: 2000 Tissue Boxes</h3>
+      <div class="meta">Buyer: LMN Pvt Ltd | Date: 08-09-2025</div>
+      <p>Requirement: Eco-friendly tissue boxes with custom branding. Need quote for bulk pricing.</p>
+      <button class="btn small primary" onclick="alertAction('Quote Sent')">Send Quote</button>
+    </div>
+
+    <!-- Repeat 7+ more requests for realistic demo -->
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year3"></span> Nivara Global</p>
+</footer>
+
+</body>
+</html>

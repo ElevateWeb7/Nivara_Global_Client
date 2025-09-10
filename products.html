@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivara Global - Products</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand" onclick="goHome()">NivaraGlobal</div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="request-quote.html">Request Quote</a>
+    <a href="order-tracking.html">Order Tracking</a>
+    <a href="ratings.html">Ratings</a>
+    <a href="register.html">Login/Register</a>
+  </nav>
+  <button class="mobile-menu" id="mobileBtn">&#9776;</button>
+</header>
+
+<main class="container">
+  <h1>All Products</h1>
+  
+  <div class="searchbar">
+    <input type="text" placeholder="Search products...">
+    <button class="btn primary" onclick="alertAction('Search clicked')">Search</button>
+  </div>
+
+  <div class="product-grid mt-3">
+    <!-- Product Items -->
+    <!-- Example 10+ products, copy & change names, sellers, price for realism -->
+    <div class="product">
+      <img src="https://via.placeholder.com/240x160?text=Tissue+Pack+A" alt="Tissue Pack A">
+      <div class="p-body">
+        <div class="meta">Seller: Nivara Supplies</div>
+        <h3>Premium Cotton Tissue Pack A</h3>
+        <div class="price">₹450</div>
+        <div class="p-actions">
+          <button class="btn small" onclick="alertAction('Added to Cart')">Add to Cart</button>
+          <button class="btn small ghost" onclick="alertAction('View Product')">View</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/240x160?text=Tissue+Pack+B" alt="Tissue Pack B">
+      <div class="p-body">
+        <div class="meta">Seller: Soft Touch Traders</div>
+        <h3>Luxury Toilet Paper Roll B</h3>
+        <div class="price">₹1200</div>
+        <div class="p-actions">
+          <button class="btn small" onclick="alertAction('Added to Cart')">Add to Cart</button>
+          <button class="btn small ghost" onclick="alertAction('View Product')">View</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/240x160?text=Tissue+Pack+C" alt="Tissue Pack C">
+      <div class="p-body">
+        <div class="meta">Seller: CleanCare Pvt Ltd</div>
+        <h3>Soft 2-Ply Tissue Roll C</h3>
+        <div class="price">₹750</div>
+        <div class="p-actions">
+          <button class="btn small" onclick="alertAction('Added to Cart')">Add to Cart</button>
+          <button class="btn small ghost" onclick="alertAction('View Product')">View</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat similar 10-15+ products for realistic demo -->
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Nivara Global</p>
+</footer>
+
+</body>
+</html>
